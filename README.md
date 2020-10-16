@@ -24,6 +24,8 @@ Además de crear un Hook personalizado nosotros mismos que contiene su propio es
 Por último explicamos de forma sencilla Context, que recordamos que tiene dos partes:
 El **Provider** y el **Consumer**.
 
+# Ejercicio
+
 El ejercico constará de utilizar todo lo que hemos visto. 
 Tendremos que poder añadir usuarios a una lista que se reflejará en otra página, os dejo unas imágenes de ejemplo pero son solo para que podáis sacar toda la estructura.
 
@@ -51,3 +53,8 @@ La función del ejercicio:
 ![list](./public/lista.png "List")
 
 ![add_user](./public/add_user.png "Add User")
+
+
+### Modo de entrega.
+
+Podréis hacer PR a este mismo proyecto con vuestro nombre y apellido para que os conteste con el feeback correspondiente, o mandarme el gitHub directamente por Slack, mi nombre es Gabriel Cebrián Lucas.
