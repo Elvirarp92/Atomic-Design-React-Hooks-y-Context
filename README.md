@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Resumen
 
-## Available Scripts
+Hemos dividio la charla en dos días, el primero hablamos de **Atomic Design**, la importancia de separar cada componente dependiendo de su utilidad.
 
-In the project directory, you can run:
+Los podemos separar en:
+1. Atoms.
+2. Molecules.
+3. Organisms.
+4. Templates.
+5. Pages.
 
-### `yarn start`
+![scheme](./public/esquema.png "Scheme")
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Y con todo esto también explicamos lo más fundamental de [Styled components](https://styled-components.com/).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Lo siguiente que vimos fueron los componentes funcionales y los Hooks. 
 
-### `yarn test`
+1. UseState
+2. UseEffect
+3. UseRef
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Además de crear un Hook personalizado nosotros mismos que contiene su propio estado.
 
-### `yarn build`
+Por último explicamos de forma sencilla Context, que recordamos que tiene dos partes:
+El **Provider** y el **Consumer**.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El ejercico constará de utilizar todo lo que hemos visto. 
+Tendremos que poder añadir usuarios a una lista que se reflejará en otra página, os dejo unas imágenes de ejemplo pero son solo para que podáis sacar toda la estructura.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Para ello es obligatorio el uso de la estructura **Atomic**, con ello el uso de todas sus partes.
+- Solo se podrá utilizar componentes funcionales.
+- Para manejar los diferentes estados será necesarío utilizar Hooks.
+- Se tiene configurar un hook personalizado (de libre elección). 
+- Se tiene que crear un Context, al igual que el hook personalizado es de libre elección.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+La función del ejercicio:
 
-### `yarn eject`
+1. Podremos crear usuarios con Correo Electrónico que deberá de validarse y una contraseña de mínimo 6 caracteres, minimo 1 mayuscula, 1 minuscula y un número. Además de tener un nombre de empresa (Las validaciónes serían una buena forma de utilizar un hook personalizado).
+3. Tendremos que hacer una llamada a una api que nos devuelva una lista de usuarios, podemos utilizar una api propia o directamente esta api https://reqres.in/, la llamada para optener la lista sería https://reqres.in/api/users?page=1.
+4. A su vez tendremos que poder eliminar un usuario de la lista dando a la papelera que tiene a la derecha.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Optativo**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Utilizar un Hook que no se haya mencionado en la charla.
+- El buscador podrá buscar por nombre y empresa.
+- Crear vustra propia API para esta funcionalidad (el Back también lo revisaré).
+- Poder editar un usuario. (Reutilizar el mismo componente que añadir usuario pero haciendo referencia a uno).
+- Si miráis la documentación de Styled Components podemos utilizar algo que se llama `theme` que se utiliza para poder crear variables para que las utilicen los styled que podrían ayudar.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![list](./public/lista.png "List")
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![add_user](./public/add_user.png "Add User")
